@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - City General Hospital</title>
+    <style>
+        /* Your hospital-themed CSS styles for the dashboard page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f6ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <h1>Welcome, Admin!</h1>
+    <p>Your Dashboard</p>
+</header>
+
+    <nav>
+        <a href="dashboard.php">Dashboard</a>
+        <form action="dashboard.php" method="post" style="display: inline;">
+            <input type="submit" name="logout" value="Logout">
+        </form>
+    </nav>
+
+    <section>
+        <h2>Patient Information</h2>
+        <table>
+            <tr>
+                <th>Patient ID</th>
+                <th>Patient Name</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Diagnosis</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>1980-01-01</td>
+                <td>Male</td>
+                <td>Heart Disease</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>1975-05-15</td>
+                <td>Female</td>
+                <td>Diabetes</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Staff Information</h2>
+        <table>
+            <tr>
+                <th>Staff ID</th>
+                <th>Staff Name</th>
+                <th>Department</th>
+                <th>Specialization</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Dr. Michael Johnson</td>
+                <td>Cardiology</td>
+                <td>Cardiologist</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nurse Emily Brown</td>
+                <td>Pediatrics</td>
+                <td>Pediatric Nurse</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        &copy; 2024 City General Hospital. All rights reserved.
+    </footer>
+
+</body>
+</html>
